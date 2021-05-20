@@ -1,0 +1,91 @@
+//Variables
+$color1:#00adb5;
+$color2:#3b83b0;
+$color3:#e0e4ec;
+$colorDark:#0c111a;
+$colorfacebook:#4867aa;
+$colorInstagram:#ed7030;
+$colorLinkedin:#0270ad;
+$colorTwiter:#34b3f7;
+//Globales
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding:0;
+    line-height:1.6;
+    background:$color3;
+    display:flex;
+    transition:0.5s ease;
+    
+}
+
+
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+img{
+    position:absolute;
+    width:100%;
+    height:auto;
+    
+}
+
+h1{
+    font-size:4rem;
+}
+p{
+    font-size:1.6rem;
+}
+
+//botones
+.btn{
+    border:none;
+    width:10rem;
+    height:4.2rem;
+    border-radius:0.8rem;
+    box-shadow: 1px 2px 3px 4px #0001;
+    cursor:pointer;
+    background:$color1;
+    transition:.4s ease;
+}
+
+.btn:hover{
+    box-shadow: -2px -2px 3px 2px #0002 inset;
+}
+
+.btn-color1{
+    @extend .btn;
+    background:$color1;
+}
+.facebook{
+    color:$colorfacebook;
+}
+.linkedin{
+    color:$colorLinkedin;
+}
+.instagram{
+    color:$colorInstagram;
+}
+.twiter{
+    color:$colorTwiter;
+}
+.text-center{
+    text-align:center;
+}

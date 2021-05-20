@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import '_Globales';
+@import '_Header';
+
+body{
+    font-family:'Nunito', sans-serif;
+}
+
+.border{
+    border:1px solid red;
+}
+
+.contenedor{
+    background:$color3;
+    width:100%;
+    height:100vh;
+    transition:.4s ease-in-out;
+}
+//Sombra para el menu
+.sombraMenu{
+    transition:.4s ease-in-out;
+    box-shadow:0 3px 8px 3px #0001;
+}
+
+//Area de presentacion
+.presentacion{
+    display:flex;
+    margin-top:9.5rem;
+    justify-content:space-between;
+
+}
+
+//imagen presentacion
+.presentacion_img{
+    width:350px;
+    height:350px;
+    overflow:hidden;
+    position:relative;
+    border-radius:50%;
+    margin:auto;
+    border:1.2rem solid $color3;
+    box-shadow: 1px 5px 10px 10px #0001;
+}
+
+.presentacion_texto{
+    margin:auto;
+    margin-right:-12rem
+}
+.presentacion_texto_saludo{
+    font-size:1.7rem
+}
+.presentacion_texto_titulo{
+    font-size:5.9rem;
+}
+.presentacion_texto_dedicacion{
+    margin-bottom:1rem;
+}
+
+.presentacion_texto_boton{
+    padding:1.5rem;
+    position:relative;
+    top:2rem;
+    box-shadow: 1px 2px 3px 4px #0001;
+    cursor:pointer;
+    border-radius:1rem;
+    background:$color1;
+    font-size:1.3rem
+}
+.presentacion_texto_boton:hover{
+    box-shadow: -1px -2px 3px 4px #0001 inset;
+}
+//*********Pagina de About**********
+.seccionAbout_contenedor{
+    display: flex;
+    margin-top:7rem;
+    justify-content: center;
+   // border:1px solid red;
+    position:relative;
+    margin-bottom:20rem;
+}
+.aboutTitle{
+    text-align:center
+}
+.seccionAbout_img{
+    width:35rem;
+    height:35rem;
+    position:relative;
+    border:1rem solid $color3;
+    overflow:hidden;
+    border-radius:2rem;
+    box-shadow:5px 5px 8px 10px #0001;
+    margin-right:2rem;
+}
+
+.sectionAbout_img img{
+    position:absolute;
+}
+
+.sectionAbout_img:hover img{
+    transform:scale(1,2);
+}
+
+.seccionAbout_description {
+    width:55rem;
+    padding:7rem;
+    text-align:justify;
+} 
+.seccionAbout_img_iconRedesSociales{
+    display:flex;
+    justify-content: space-around;
+    position:absolute;
+    bottom:-1rem;
+    left:28rem;
+    align-items:center;
+}
+
+.seccionAbout_img_iconRedesSociales a{
+    font-size:2rem;
+    width:4.4rem;
+    height:4.4rem;
+    box-shadow: 2px 2px 2px 2px #0001;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right: 1.5rem;
+    transition:.5s ease;
+}
+
+.seccionAbout_img_iconRedesSociales a:nth-child(1):hover{
+    color:#fff;
+    background:$colorfacebook;
+}
+.seccionAbout_img_iconRedesSociales a:nth-child(2):hover{
+    background:$colorLinkedin;
+    color:white;
+}
+
+.seccionAbout_img_iconRedesSociales a:nth-child(3):hover{
+    color:#fff;
+    background:linear-gradient(#9e4cce ,#f31544)
+}
+
+.seccionAbout_img_iconRedesSociales a:nth-child(4):hover{
+    background:$colorTwiter;
+    color:#fff;
+}
+
+.aboutInformation{
+    width:100%;
+    height:90vh;
+}
+
+.aboutInformation_skills{
+    width:85%;
+    height:80%;
+    margin:2rem auto;
+    display:grid;
+    gap:2rem;
+    grid-template-columns: 1fr 1fr;
+
+}
+.aboutInformation_title{
+    text-align:center;
+    font-size:5.25rem;
+}
+
+.aboutInformation_skills_item{
+    width:35rem;
+    height:1rem;
+    margin:auto;
+    border-radius:2rem;
+    box-shadow:2px 4px 12px 2px #0001,
+                2px 4px 3px 1px #0001 inset;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+
+
+
+/*
+.aboutInformation_skills_item_box::before{
+    content:'';
+    display:block;
+    position:absolute;
+    width:70%;
+    height:1rem;
+    background:$color1;
+    border-radius:0.4rem;
+    top:0.2rem;
+    left:0;
+}
+*/
+
+.aboutInformation_skills_item_box span{
+    width:50%;
+    height:1rem;
+    display:block;
+    background:$color1;
+    border:1px solid red;
+}
+
+
+
+
+//barra html
+.aboutInformation_skills_item_box .html{
+   
+}
+
+//barra javascript
+.aboutInformation_skills_item_box{    
+}
+
+//barra css3
+.aboutInformation_skills_item_box:nth-child(){    
+}
+
+//barra vue.js
+.aboutInformation_skills_item_box:nth-child(){    
+}
+
+//barra git
+.aboutInformation_skills_item_box:nth-child(){    
+}
+
+.aboutInformacion_skills_item_label{
+    position:absolute;
+    top:-2rem;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+
