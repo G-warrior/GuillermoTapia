@@ -30,7 +30,7 @@ body {
 ul {
   list-style: none;
 }
-
+/**/
 a {
   text-decoration: none;
   color: #000;
@@ -571,8 +571,10 @@ body {
   height: 1rem;
   margin: auto;
   border-radius: 2rem;
-  -webkit-box-shadow: 2px 4px 12px 2px #0001, 2px 4px 3px 1px #0001 inset;
-          box-shadow: 2px 4px 12px 2px #0001, 2px 4px 3px 1px #0001 inset;
+  -webkit-box-shadow: 2px 4px 12px 2px #0001,
+ 2px 4px 3px 1px #0001 inset;
+          box-shadow: 2px 4px 12px 2px #0001,
+ 2px 4px 3px 1px #0001 inset;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
