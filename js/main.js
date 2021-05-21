@@ -19,3 +19,9 @@ window.addEventListener('scroll',()=>{
         barraMenu.classList.remove('sombraMenu')
     }
 })
+
+//boton secundario para cerrar el menu desplegable
+const closeBtn = document.querySelector('.closeBtn');
+closeBtn.addEventListener('click',()=>{
+    sidebar.classList.remove('active');
+})

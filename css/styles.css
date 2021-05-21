@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-/**/
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -156,6 +156,13 @@ p {
   margin-right: 28rem;
 }
 
+@media screen and (max-width: 360px) {
+  .barraMenu .barraMenu_toggleMenu.activo {
+    margin-right: 50rem;
+    z-index: 1000;
+  }
+}
+
 .barraMenu .barraMenu_toggleMenu.activo span:nth-child(1) {
   -webkit-transform: translate(0, 8px) rotate(45deg);
           transform: translate(0, 8px) rotate(45deg);
@@ -181,6 +188,26 @@ p {
   transition: .5s ease;
   display: none;
   right: 0;
+}
+
+.sideMenu .closeBtn {
+  background: none;
+  font-weight: bolder;
+  color: #fff;
+  border: none;
+  font-size: 3rem;
+  position: relative;
+  top: 0;
+  right: -85%;
+  margin-bottom: 1.9rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+  .sideMenu .closeBtn {
+    display: block;
+  }
 }
 
 .sideMenu a {
@@ -218,6 +245,8 @@ p {
 
 body {
   font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  min-width: 360px;
 }
 
 .border {
@@ -230,6 +259,12 @@ body {
   height: 100vh;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+}
+
+@media screen and (max-width: 360px) {
+  .contenedor .contenedor-celular {
+    overflow-x: hidden;
+  }
 }
 
 .sombraMenu {
@@ -247,6 +282,32 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+@media screen and (max-width: 360px) {
+  .presentacion {
+    background: red;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion {
+    margin: 9.5rem auto;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .presentacion {
+    margin: 14.5rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion {
+    margin: 9.5rem auto;
+  }
 }
 
 .presentacion_img {
@@ -255,10 +316,35 @@ body {
   overflow: hidden;
   position: relative;
   border-radius: 50%;
-  margin: auto;
-  border: 1.2rem solid #e0e4ec;
+  border: 0.8rem solid #e0e4ec;
   -webkit-box-shadow: 1px 5px 10px 10px #0001;
           box-shadow: 1px 5px 10px 10px #0001;
+  margin: auto;
+}
+
+@media screen and (max-width: 360px) {
+  .presentacion_img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    -webkit-transform: translateX(16%);
+            transform: translateX(16%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion_img {
+    width: 27rem;
+    height: 27rem;
+    top: -4rem;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .presentacion_img {
+    width: 27rem;
+    height: 27rem;
+  }
 }
 
 .presentacion_texto {
@@ -266,16 +352,81 @@ body {
   margin-right: -12rem;
 }
 
+@media screen and (max-width: 360px) {
+  .presentacion_texto {
+    position: absolute;
+    margin-top: 1rem;
+    background: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion_texto {
+    position: absolute;
+    top: 22rem;
+    background: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .presentacion_texto_saludo {
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 360px) {
+  .presentacion_texto_saludo {
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion_texto_saludo {
+    font-size: 1.5rem;
+    position: relative;
+    top: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .presentacion_texto_saludo {
+    font-size: 1.5rem;
+    position: relative;
+    top: 3rem;
+  }
 }
 
 .presentacion_texto_titulo {
   font-size: 5.9rem;
 }
 
+@media screen and (max-width: 360px) {
+  .presentacion_texto_titulo {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion_texto_titulo {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .presentacion_texto_titulo {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+
 .presentacion_texto_dedicacion {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  color: #00adb5;
 }
 
 .presentacion_texto_boton {
@@ -420,10 +571,8 @@ body {
   height: 1rem;
   margin: auto;
   border-radius: 2rem;
-  -webkit-box-shadow: 2px 4px 12px 2px #0001,
- 2px 4px 3px 1px #0001 inset;
-          box-shadow: 2px 4px 12px 2px #0001,
- 2px 4px 3px 1px #0001 inset;
+  -webkit-box-shadow: 2px 4px 12px 2px #0001, 2px 4px 3px 1px #0001 inset;
+          box-shadow: 2px 4px 12px 2px #0001, 2px 4px 3px 1px #0001 inset;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

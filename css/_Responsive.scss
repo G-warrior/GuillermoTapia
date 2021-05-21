@@ -1,2 +1,23 @@
 //configuracion responsive para index.html
-// pantallas medianas
+$breakpoints:(
+    phone:360px,
+    tablet:768px,
+    laptop:1084px,
+    desktop:1440px
+
+);
+
+@mixin Responsive($breakpoint){
+    @if map-has-key( $breakpoints, $breakpoint){
+        @media screen and(max-width: map-get($breakpoints, $breakpoint)){
+            @content;
+        }  
+    }
+    @else{
+        @warn "El valor'#{$breakpoint}' No ha sido declarado como breakpoint"
+    }
+};
+
+
+
+
